@@ -4,8 +4,8 @@
 
 → Etapes du projet
 ```
-+ 1 _ Parcours DOM
-+ 2 _ Modif DOM
+- 1 _ Parcours DOM
+- 2 _ Modif DOM
 ```
 
 ## 👤  Auteur(s) : 
