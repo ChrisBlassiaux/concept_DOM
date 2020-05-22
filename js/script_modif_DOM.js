@@ -27,10 +27,11 @@ function populateImages() {
 }
 
 function deleteLastCards() {
-  let card = document.getElementsByClassName('card');
-
-  //card.removeChild();
-  //FAIRE CETTE METHODE 
+  let cards = document.getElementsByClassName('card');
+  let i = cards.length - 3
+  for (let inc = 0; inc < 3; inc++) {
+    cards[i].outerHTML = ""
+  }
 }
 
 function changeCardsText() {
@@ -44,11 +45,25 @@ function changeCardsText() {
 }
 
 function changeViewButtons() {
-  //boucle
+  viewButton = document.querySelectorAll(".card .btn");
+
+  for (let i = 0; i < viewButton.length; i++) {
+    if (viewButton[i].innerHTML === "View") {
+      viewButton[i].classList.remove("btn-outline-secondary");
+      viewButton[i].classList.add("btn-success");
+    }
+  }
 }
 
 function pyramid() {
-  //modif 8 
+  let parent = document.querySelectorAll('.container')[3];
+
+  let newRow = document.createElement('div');
+  newRow.classList.add('row');
+  parent.appendChild(newRow);
+
+  let cardThree = document.querySelectorAll('.col-md-4')[2];
+  newRow.appendChild(cardThree);
 }
 
 changeTitles();
