@@ -2,6 +2,12 @@
 
 → Concept_DOM : Pratique du DOM
 
+→ Etapes du projet
+```
++ 1 _ Parcours DOM
++ 2 _ Modif DOM
+```
+
 ## 👤  Auteur(s) : 
 
 -- Chris Blassiaux → 
